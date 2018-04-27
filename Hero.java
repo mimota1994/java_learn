@@ -15,6 +15,15 @@ public class Hero {
 	String killwword;
 	String bekilledword;
 	
+	public Hero(String heroName,float heroHP,float heroArmor,int heroMoveSpeed){
+		
+		name=heroName;
+		hp=heroHP;
+		armor=heroArmor;
+		moveSpeed=heroMoveSpeed;
+	}
+	
+	
 	void keng(){
 		System.out.println("坑队友！！！");
 	}
@@ -41,19 +50,12 @@ public class Hero {
 	
 	
 	public static void main(String[] args) {
-		Hero garen=new Hero();
-		garen.name="盖伦";
-		garen.hp=616.28f;
-		garen.armor=27.536f;
-		garen.moveSpeed=350;
-		garen.addSpeed(100);
+		Hero garen=new Hero("盖伦",616.28f,27.536f,350);
+
 		
 		
-		Hero teemo=new Hero();
-		teemo.name="提莫";
-		teemo.hp=383f;
-		teemo.armor=14f;
-		teemo.moveSpeed=330;
+		Hero teemo=new Hero("提莫",383f,14f,330);
+
 				
 	}
 
